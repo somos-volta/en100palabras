@@ -1,0 +1,35 @@
+<View style={styles.action}>
+              <Image 
+                style={styles.icon}
+                resizeMode='cover'
+                source={require('./images/like-color.png')}
+              />
+              <Text style={[styles.typeMono, styles.actionLabel]}>
+                ME GUSTA
+              </Text>
+            </View>
+             <View style={styles.action}>
+              <Image 
+                style={styles.icon}
+                resizeMode='cover'
+                source={require('./images/share-solid.png')}
+              />
+              <Text style={[styles.typeMono, styles.actionLabel]}>
+                COMPARTIR
+              </Text>
+            </View>
+             <View style={styles.action}>
+              <Image 
+                style={styles.icon}
+                resizeMode='cover'
+                source={require('./images/next-solid.png')}
+              />
+              <Text style={[styles.typeMono, styles.actionLabel]}>
+                SIGUIENTE
+              </Text>
+            </View>
+
+
+  _handlePath(event) {
+    this.setState({iconPath: './../images/'+ this.props.icon+'.png'});
+  }
